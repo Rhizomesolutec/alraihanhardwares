@@ -486,6 +486,24 @@ body {
     right: 0;
 }
 
+.testimonial-img img:nth-child(5) {
+    top: 38%;
+    left: 38%;
+}
+
+.google-review-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    color: #404A3D;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.google-review-link:hover {
+    color: #e33727;
+}
+
 .testimonial-img img .animated.pulse {
     animation-duration: 2s;
 }
@@ -494,6 +512,12 @@ body {
     width: 100px;
     height: 100px;
     border-radius: 100px;
+}
+
+.review-stars {
+    color: #e33727;
+    letter-spacing: 0.12rem;
+    font-size: 0.95rem;
 }
 
 .testimonial-carousel .owl-nav {
@@ -625,6 +649,20 @@ body {
         margin-right: 10px;
 
     }
+
+.about-film {
+    background: #12161a;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.about-film-video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    background: #12161a;
+}
 
 /*** Cinematic hero video ***/
 .hero-cinematic {
