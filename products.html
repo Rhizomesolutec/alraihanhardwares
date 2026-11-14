@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Products | Al Raihan Hardwares</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="hardware tools, electrical products, building materials, Al Raihan Hardwares" name="keywords">
+    <meta content="Browse Al Raihan Hardwares products: power tools, hand tools, electrical accessories, cables, switches and LED lighting." name="description">
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+
+    <div class="container-fluid bg-dark px-0">
+        <div class="row g-0 d-none d-lg-flex">
+            <div class="col-lg-6 ps-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center text-light">
+                    <span>Follow Us:</span>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-6 text-end">
+                <div class="h-100 bg-secondary d-inline-flex align-items-center text-light py-2 px-4">
+                    <span class="me-2 fw-semi-bold"><i class="fa fa-phone-alt me-2"></i>Call Us:</span>
+                    <a href="tel:+971568656315" class="text-light">+971 56 865 6315</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <img src="img/alraihan-logo.png" class="m-0 logo-img" alt="Al Raihan Hardwares">
+        </a>
+        <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="service.html" class="nav-item nav-link">Services</a>
+                <a href="products.html" class="nav-item nav-link active">Products</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="catalogue-hero" style="background-image: url('assets/images/products/lighting/flood-light-premium.jpg')">
+        <div class="container py-5">
+            <p class="text-uppercase text-white-50 mb-2">OUR PRODUCT COLLECTION</p>
+            <h1 class="display-5 text-white mb-3">Everything You Need. All in One Place.</h1>
+            <p class="text-white mb-0" style="max-width: 40rem;">Discover our wide range of hardware tools, electrical products and building materials.</p>
+        </div>
+    </header>
+
+    <main class="container-xxl py-5" id="product-catalogue">
+        <div class="container">
+            <div class="catalogue-tools">
+                <label class="visually-hidden" for="catalogue-search">Search products</label>
+                <input id="catalogue-search" class="catalogue-search" type="search" placeholder="Search by name or product code">
+                <button id="catalogue-clear" class="catalogue-clear" type="button">Clear filters</button>
+            </div>
+            <div id="catalogue-filters" class="catalogue-filters" aria-label="Product categories"></div>
+            <p id="catalogue-count" class="catalogue-count"></p>
+            <div id="catalogue-grid" class="product-grid"></div>
+            <div id="catalogue-empty" class="catalogue-empty">
+                <h2 class="h4">No matching products</h2>
+                <p class="mb-0">Try another name, code, or category.</p>
+            </div>
+        </div>
+    </main>
+
+    <div id="product-modal" class="product-modal" role="dialog" aria-modal="true" aria-label="Product details">
+        <div class="product-dialog"></div>
+    </div>
+
+    <div class="container-fluid bg-dark footer mt-5 py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Our Office</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Madinat zayed, Sanaiya, Al Mahareeth Street - Abu Dhabi - 58450</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>050 7010320 | 056 8656315</p>
+                    <p class="mb-2"><i class="fab fa-whatsapp me-3"></i><a class="text-light" href="https://wa.me/971568656399" target="_blank" rel="noopener">+971 56 865 6399</a> | <a class="text-light" href="https://wa.me/971568656315" target="_blank" rel="noopener">+971 56 865 6315</a></p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i><a class="text-light" href="mailto:Sales@alraihanhardwares.com">Sales@alraihanhardwares.com</a></p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i><a class="text-light" href="mailto:Info@alraihanhardwares.com">Info@alraihanhardwares.com</a></p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i><a class="text-light" href="mailto:alraihanuae@gmail.com">alraihanuae@gmail.com</a></p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="index.html">Home</a>
+                    <a class="btn btn-link" href="products.html">Products</a>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="service.html">Services</a>
+                    <a class="btn btn-link" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-secondaryy text-light copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">&copy; <a class="fw-semi-bold text-dark" href="index.html">Alraihan</a> All Right Reserved.</div>
+                <div class="col-md-6 text-md-end mb-3 mb-md-0"><a class="fw-semi-bold text-light" href="#">Designed By</a> Rhizome Solutech.</div>
+            </div>
+        </div>
+    </div>
+
+    <a href="https://wa.me/971568656399" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="assets/js/products-data.js"></script>
+    <script src="assets/js/products.js"></script>
+</body>
+
+</html>
