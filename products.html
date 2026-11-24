@@ -62,28 +62,87 @@
         </div>
     </nav>
 
-    <header class="catalogue-hero" style="background-image: url('assets/images/products/lighting/flood-light-premium.jpg')">
+    <header class="catalogue-hero" style="background-image: url('assets/images/categories/steel-structural.jpg')">
         <div class="container py-5">
-            <p class="text-uppercase text-white-50 mb-2">OUR PRODUCT COLLECTION</p>
-            <h1 class="display-5 text-white mb-3">Everything You Need. All in One Place.</h1>
-            <p class="text-white mb-0" style="max-width: 40rem;">Discover our wide range of hardware tools, electrical products and building materials.</p>
+            <p class="catalogue-hero-eyebrow mb-2">AL RAIHAN HARDWARES &middot; PRODUCT SHOWCASE</p>
+            <h1 class="display-5 text-white fw-bold mb-3">One Stop For All Your Building Material Needs.</h1>
+            <p class="text-white-50 mb-4" style="max-width: 42rem; font-size: 1.05rem;">Explore our curated architectural and industrial collections organized by category — from structural steel, plywood, and cement to power tools, electrical, plumbing, sanitaryware, and site safety.</p>
+            <div class="catalogue-hero-stats">
+                <div class="hero-stat-item"><strong>16</strong><span>Product Categories</span></div>
+                <div class="hero-stat-item"><strong>290+</strong><span>Curated Products</span></div>
+                <div class="hero-stat-item"><strong>30+</strong><span>Trusted Global Brands</span></div>
+            </div>
         </div>
     </header>
 
-    <main class="container-xxl py-5" id="product-catalogue">
+    <main class="catalogue-main py-5" id="product-catalogue">
         <div class="container">
-            <div class="catalogue-tools">
-                <label class="visually-hidden" for="catalogue-search">Search products</label>
-                <input id="catalogue-search" class="catalogue-search" type="search" placeholder="Search by name or product code">
-                <button id="catalogue-clear" class="catalogue-clear" type="button">Clear filters</button>
-            </div>
-            <div id="catalogue-filters" class="catalogue-filters" aria-label="Product categories"></div>
-            <p id="catalogue-count" class="catalogue-count"></p>
-            <div id="catalogue-grid" class="product-grid"></div>
-            <div id="catalogue-empty" class="catalogue-empty">
-                <h2 class="h4">No matching products</h2>
-                <p class="mb-0">Try another name, code, or category.</p>
-            </div>
+            <!-- VIEW 1: PREMIUM CATEGORY DIRECTORY -->
+            <section id="categories-view" class="categories-directory">
+                <div class="directory-header">
+                    <div>
+                        <p class="directory-kicker mb-1">BROWSE BY CATEGORY</p>
+                        <h2 class="directory-heading mb-1">Product Collections</h2>
+                        <p class="directory-sub mb-0">Select any category below to explore its complete product showcase.</p>
+                    </div>
+                    <div class="directory-search-wrap">
+                        <i class="bi bi-search directory-search-icon" aria-hidden="true"></i>
+                        <label class="visually-hidden" for="catalogue-search">Search categories or products</label>
+                        <input id="catalogue-search" class="directory-search-input" type="search" placeholder="Search categories, brands, or products...">
+                        <button id="catalogue-clear" class="directory-search-clear" type="button" aria-label="Clear search">&times;</button>
+                    </div>
+                </div>
+
+                <div id="categories-grid" class="categories-showcase-grid"></div>
+
+                <div id="global-search-results" class="global-search-results" style="display: none;">
+                    <div class="search-results-header">
+                        <h3 class="h4 mb-0">Matching Products</h3>
+                        <p id="global-search-count" class="mb-0 text-muted"></p>
+                    </div>
+                    <div id="global-search-grid" class="showcase-product-grid"></div>
+                </div>
+            </section>
+
+            <!-- VIEW 2: CATEGORY PRODUCTS SHOWCASE -->
+            <section id="category-detail-view" class="category-detail-view" style="display: none;">
+                <div class="category-detail-topbar">
+                    <button type="button" id="category-back-btn" class="category-back-btn">
+                        <i class="bi bi-arrow-left"></i> All Categories
+                    </button>
+                    <nav class="category-breadcrumb" aria-label="Breadcrumb">
+                        <span>Products</span>
+                        <i class="bi bi-chevron-right"></i>
+                        <strong id="category-breadcrumb-name"></strong>
+                    </nav>
+                </div>
+
+                <div class="category-detail-banner">
+                    <div class="category-detail-info">
+                        <p class="directory-kicker mb-1">COLLECTION SHOWCASE</p>
+                        <h2 id="category-detail-title" class="category-detail-title mb-2"></h2>
+                        <p id="category-detail-desc" class="category-detail-desc mb-3"></p>
+                        <div id="category-detail-brands" class="category-detail-brands"></div>
+                    </div>
+                    <div class="category-detail-controls">
+                        <div class="inner-search-wrap">
+                            <i class="bi bi-search" aria-hidden="true"></i>
+                            <label class="visually-hidden" for="category-inner-search">Filter within category</label>
+                            <input id="category-inner-search" type="search" placeholder="Search in this collection...">
+                        </div>
+                        <p id="category-detail-count" class="category-detail-count mb-0"></p>
+                    </div>
+                </div>
+
+                <div id="category-subfilters" class="category-subfilters" aria-label="Sub-collections"></div>
+
+                <div id="category-products-grid" class="showcase-product-grid"></div>
+
+                <div id="category-empty" class="catalogue-empty">
+                    <h3 class="h5">No matching items in this collection</h3>
+                    <p class="mb-0">Try clearing your search term or selecting another sub-collection.</p>
+                </div>
+            </section>
         </div>
     </main>
 
@@ -136,6 +195,7 @@
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="js/main.js"></script>
     <script src="assets/js/products-data.js"></script>
+    <script src="assets/js/catalog3-data.js"></script>
     <script src="assets/js/products.js"></script>
 </body>
 
