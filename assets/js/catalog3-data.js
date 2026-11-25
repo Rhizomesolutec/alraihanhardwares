@@ -4,7 +4,7 @@ window.PRODUCT_CATEGORIES = [
     name: "Plywood & Timber",
     tagline: "Film-faced shuttering plywood, commercial plywood & structural whitewood",
     description: "Construction-grade film-faced plywood, high-reuse PVC coated panels, commercial plywood, and kiln-dried Romanian & Austrian whitewood timber.",
-    brands: ["Khashab Plex", "Diamond Prestige", "Ever Green", "Ferco"],
+    brands: ["Diamond Prestige", "Ferco"],
     image: "assets/images/categories/plywood-timber.jpg",
     featured: true
   },
@@ -182,16 +182,15 @@ window.CATALOG3_PRODUCTS = [
   // 1. PLYWOOD & TIMBER
   {
     id: "c3-film-faced-plywood",
-    name: "Film Faced Plywood (Khashab Plex / Diamond Prestige / Marinee)",
+    name: "Film Faced Plywood (Diamond Prestige / Marinee)",
     categorySlug: "plywood-timber",
     category: "Plywood & Timber",
     subCategory: "Film Faced Plywood",
-    brand: "Khashab Plex / Diamond / Marinee",
+    brand: "Diamond / Marinee",
     description: "Smooth brown phenolic film-faced shuttering plywood engineered for clean concrete formwork finishes across multiple pours.",
     specifications: [
       "Panel Size: 1220 × 2440 × 18 mm",
       "Type of Film: Brown smooth phenolic film",
-      "Khashab Plex: Combi Core · 5–7 Times reuse",
       "Diamond Prestige: Finger Joint Core · 3 Times reuse",
       "Marinee: Finger Joint Core · 1–2 Times reuse"
     ],
@@ -201,11 +200,11 @@ window.CATALOG3_PRODUCTS = [
   },
   {
     id: "c3-pvc-coated-plywood",
-    name: "AL Khashab Ever Green PVC Coated Plywood",
+    name: "PVC Coated Plywood",
     categorySlug: "plywood-timber",
     category: "Plywood & Timber",
     subCategory: "PVC Coated Plywood",
-    brand: "AL Khashab Ever Green",
+    brand: "",
     description: "High-durability PP film-faced shuttering plywood designed for extended concrete formwork cycles with superior moisture resistance.",
     specifications: [
       "Panel Size: 1220 × 2440 × 18 mm",
